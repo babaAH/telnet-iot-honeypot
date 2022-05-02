@@ -21,7 +21,7 @@ class Virustotal:
 		self.timeout    = 0
 
 	def req(self, method, url, files=None, params=None, headers=None):
-		print "VT " + url
+		print ("VT " + url)
 		r = None
 		if method == "GET":
 			r = requests.get(url, files=files, params=params, headers=headers)

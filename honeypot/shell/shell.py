@@ -184,7 +184,7 @@ class CommandList:
                 return ret            
             return self.cmd2.run(env)
         else:
-            print "WARN: Bad Mode"
+            print ("WARN: Bad Mode")
             return 1
         
     def isnone(self):
@@ -250,7 +250,7 @@ class Actions(object):
             elif operator == "<":
                 c.redirect_from(filename)
             else:
-                print "WARNING: unsupported redirect operator " + operator
+                print ("WARNING: unsupported redirect operator " + operator)
                 
         return c
     

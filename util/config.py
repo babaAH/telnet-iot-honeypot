@@ -12,7 +12,7 @@ class Config:
 		try:
 			self.userconfig = self.loadyaml("config.yaml")
 		except:
-			print "Warning: Cannot load config.yaml"
+			print ("Warning: Cannot load config.yaml")
 			self.userconfig = {}
 
 	def loadyaml(self, filename):
@@ -24,7 +24,7 @@ class Config:
 		try:
 			self.userconfig = self.loadyaml(filename)
 		except:
-			print "Warning: Cannot load " + str(filename)
+			print ("Warning: Cannot load " + str(filename))
 	
 	def get(self, key, optional=False, default=None):
 		if key in self.userconfig:

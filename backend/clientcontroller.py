@@ -98,7 +98,7 @@ class ClientController:
 		if self.session.query(IPRange.ip_min).count() != 0:
 			return
 		
-		print "Filling IPRange Tables"
+		print ("Filling IPRange Tables")
 		
 		asntable = ipdb.ipdb.get_asn()
 		progress = 0
@@ -135,7 +135,7 @@ class ClientController:
 				# Dont add session if we cannot find an asn for it
 				self.session.add(ip)
 		
-		print "IPranges loaded"
+		print ("IPranges loaded")
 		
 	@db_wrapper
 	def get_ip_range_offline(self, ip):
@@ -214,7 +214,7 @@ class ClientController:
 				else:
 					network.nb_firstconns = 0
 					
-				print "Net " + str(network.id) + ": " + str(network.nb_firstconns)
+				print ("Net " + str(network.id) + ": " + str(network.nb_firstconns))
 	
 	@db_wrapper
 	def put_session(self, session):
