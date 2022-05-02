@@ -334,7 +334,7 @@ def run():
 	#socketio.run(app, host=config.get("http_addr"), port=config.get("http_port"))
 
 def stop():
-	print "asdasdasd"
+	print ("asdasdasd")
 
 if __name__ == "__main__":
 	run()
