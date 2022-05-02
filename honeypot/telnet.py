@@ -3,7 +3,7 @@ import socket
 import traceback
 import time
 
-from thread import start_new_thread
+from _thread import start_new_thread
 
 from session import Session
 from util.dbg import dbg
