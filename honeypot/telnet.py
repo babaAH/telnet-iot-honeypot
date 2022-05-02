@@ -5,7 +5,7 @@ import time
 
 from _thread import start_new_thread
 
-from session import Session
+from _session import Session
 from util.dbg import dbg
 from util.config import config
 
